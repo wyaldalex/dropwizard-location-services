@@ -1,7 +1,0 @@
-server:
-  applicationConnectors:
-    - type: http
-      port: 10001 # Replace with desired port number
-  adminConnectors:
-    - type: http
-      port: 10002 # Replace with desired port number

@@ -1,0 +1,23 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 10001 # Replace with desired port number
+  adminConnectors:
+    - type: http
+      port: 10002 # Replace with desired port number
+
+# Database configuration.
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://0.0.0.0:3306/locations?useSSL=false&&allowPublicKeyRetrieval=true&interactiveClient=true&autoReconnectForPools=true
+  user: root
+  password: 1234
+  maxWaitForConnection: 1s
+  validationQuery: "SELECT now()"
+  validationQueryTimeout: 3s
+  minSize: 8
+  maxSize: 32
+  checkConnectionWhileIdle: false
+  evictionInterval: 10s
+  minIdleTime: 1 minute
+  checkConnectionOnBorrow: true

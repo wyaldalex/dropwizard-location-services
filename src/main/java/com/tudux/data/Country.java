@@ -3,6 +3,7 @@ package com.tudux.data;
 public enum Country {
 
     US("United States of America", "US"),
+    USA("United States of America", "US"),
     UK("United Kingdom", "GB");
     private String name;
     private String code;

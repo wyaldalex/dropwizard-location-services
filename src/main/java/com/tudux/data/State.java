@@ -3,6 +3,8 @@ package com.tudux.data;
 public enum State {
 
     ARIZONA("Arizona", "AR"),
+    CALIFORNIA("California", "CA"),
+    California("California", "CA"),
     COLORADO("Colorado", "CO");
 
     private String name;

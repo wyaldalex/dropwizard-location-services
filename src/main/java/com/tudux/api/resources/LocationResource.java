@@ -22,6 +22,7 @@ public class LocationResource {
     // Get all locations from the DB
     @GET
     public Response getLocations() {
-        return Response.ok().entity("{\"id\": \"1\"}").build();
+        //return Response.ok().entity("{\"id\": \"1\"}").build();
+        return Response.ok().entity(this.locationService.getLocations()).build();
     }
 }
