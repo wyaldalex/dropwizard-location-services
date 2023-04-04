@@ -2,8 +2,8 @@ package com.tudux.model;
 
 public class BaseEntity {
     private Long id;
-    private String creationOn;
-    private String modification;
+    private String createdOn;
+    private String modifiedOn;
 
     public Long getId() {
         return id;
@@ -13,25 +13,28 @@ public class BaseEntity {
         this.id = id;
     }
 
-    public String getCreationOn() {
-        return creationOn;
+    public String getCreatedOn() {
+        return createdOn;
     }
 
-    public void setCreationOn(String creationOn) {
-        this.creationOn = creationOn;
+    public void setCreatedOn(String createdOn) {
+        this.createdOn = createdOn;
     }
 
-    public String getModification() {
-        return modification;
+    public String getModifiedOn() {
+        return modifiedOn;
     }
 
-    public void setModification(String modification) {
-        this.modification = modification;
+    public void setModifiedOn(String modifiedOn) {
+        this.modifiedOn = modifiedOn;
     }
 
-    public BaseEntity(Long id, String creationOn, String modification) {
+    public BaseEntity(Long id, String createdOn, String modifiedOn) {
         this.id = id;
-        this.creationOn = creationOn;
-        this.modification = modification;
+        this.createdOn = createdOn;
+        this.modifiedOn = modifiedOn;
+    }
+
+    public BaseEntity() {
     }
 }

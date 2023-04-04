@@ -19,7 +19,7 @@ public interface LocationsDAO {
     @SqlQuery("SELECT * FROM locations WHERE id = :id")
     Location getById(@Bind("id") int id);
 
-    @SqlUpdate("INSERT INTO locations (code, country, state, type, name, createdOn, modifiedOn) VALUES (:code, :country, :state, :type, :name, :createdOn, :modifiedOn)")
+    @SqlUpdate("INSERT INTO locations (id, code, country, state, type, name, createdOn, modifiedOn) VALUES (:id, :code, :country, :state, :type, :name, :createdOn, :modifiedOn)")
     int insert(@BindBean Location location);
 
     @SqlUpdate("UPDATE locations SET code = :code, country = :country, state = :state, type = :type, name = :name, createdOn = :createdOn, modifiedOn = :modifiedOn WHERE id = :id")
